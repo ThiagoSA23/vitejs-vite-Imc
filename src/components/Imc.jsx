@@ -41,7 +41,7 @@ const Imc = () => {
         placeholder="Altura(M)"
         required
       />
-      <button onClick={calcImc}>Calcular</button>
+      <br /><button onClick={calcImc}>Calcular</button>
       <h2>{resultado}</h2>
       <h3>{mensagem}</h3>
     </div>
