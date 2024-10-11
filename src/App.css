@@ -18,7 +18,7 @@
 }
 
 body {
-  background-image: url('https://www.dorcronica.blog.br/web/wp-content/uploads/2022/09/fb-o-indice-de-massa-corporal-imc-e-impreciso-e-enganoso.png');
+  background-image: url('https://img.freepik.com/fotos-premium/3d-ilustracion-icono-panel-control-redondo-concepto-alto-riesgo-velocimetro-escala-calificacion-crediticia_116124-9968.jpg');
   background-size: cover;
   margin: 0;
   display: flex;
@@ -40,8 +40,8 @@ button {
   padding: 0.8rem 1.5rem;
   background: linear-gradient(
     90deg,
-    rgb(188, 21, 21) 0%,
-    rgb(76, 66, 66) 100%
+    rgba(221, 19, 184, 0.601) 0%,
+    rgba(46, 1, 43, 0.562) 100%
   );
   border-radius: 3rem;
   border: none;
@@ -51,14 +51,13 @@ button:hover {
   color: white;
   background: linear-gradient(
     90deg,
-    rgb(76, 66, 66) 0%,
-    rgb(188, 21, 21) 100%
+    rgb(34, 15, 49) 0%,
+    rgb(106, 104, 104) 100%
   );
 }
 
 input {
   border-radius: 3rem;
-  padding: 10px;
-  font-size: 16px;
-  margin: 8px;
+  padding: 8px;
+  font-size: 14px;
 }

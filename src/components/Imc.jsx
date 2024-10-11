@@ -4,24 +4,12 @@ const Imc = () => {
   const [peso, setPeso] = useState();
   const [altura, setAltura] = useState();
   const [resultado, setResultado] = useState();
-  const [mensagem, setMensagem] = useState();
   const calcImc = () => {
     const Metro = altura / 100;
     const imc = peso / Metro ** 2;
     const arredondar = imc.toFixed(2);
     setResultado(arredondar);
-
-    let msg = '';
-        if (imc < 18.5) {
-            msg = 'Abaixo do peso';
-        } else if (imc >= 18.5 && imc < 24.9) {
-            msg = 'Peso normal';
-        } else if (imc >= 25 && imc < 29.9) {
-            msg = 'Sobrepeso';
-        } else {
-            msg = 'Obesidade';
-        }
-        setMensagem(msg);
+    
   };
   return (
     <div>
@@ -33,7 +21,6 @@ const Imc = () => {
         placeholder="Peso(Kg)"
         required
       />
-      
       <input
         type="number"
         value={altura}
@@ -41,10 +28,8 @@ const Imc = () => {
         placeholder="Altura(M)"
         required
       />
-
       <button onClick={calcImc}>Calcular</button>
-      <h2>{resultado}</h2>
-      <h3>{mensagem}</h3>
+      {resultado}
     </div>
   );
 };
